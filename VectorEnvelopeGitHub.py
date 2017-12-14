@@ -12,6 +12,10 @@ input_fc = arcpy.GetParameterAsText(0)
 out_workspace = arcpy.GetParameterAsText(1)
 output_envelope = arcpy.GetParameterAsText(2)
 
+print("Input feature class is ", input_fc)
+print("Output workspace is ", out_workspace)
+print("Envelope feature class is ", output_envelope)
+
 # Only need the name of the envelope feature class for CreateFeatureclass_management, not entire path
 output_envelope = os.path.basename(output_envelope)
 
